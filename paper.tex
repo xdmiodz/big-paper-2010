@@ -1,28 +1,71 @@
-\documentclass[12pt, oneside, a4paper]{article}
-\usepackage[colorlinks,bookmarksopen]{hyperref}
-\usepackage[warn]{mathtext}
+\documentclass[10pt,a5]{article}
+
+
+
+\usepackage{amsmath,amsxtra}
 \usepackage[english,russian]{babel}
-\usepackage{amsmath,amssymb}
-\usepackage{booktabs}
-\usepackage{array}
+\usepackage{cite,amssymb}
+\usepackage[dvips]{graphicx}
+\usepackage{array,hhline,longtable}
+\usepackage{caption,afterpage}
+\usepackage[utf8]{inputenc}
+\usepackage{mathtext}
 \usepackage{pscyr}
 \renewcommand{\rmdefault}{ftm}
-\usepackage[utf8]{inputenc}
 \DeclareSymbolFont{T2Aletters}{T2A}{cmr}{m}{it}
+\usepackage{wrapfig}
+\usepackage[a5paper, includefoot,left=1.5cm, right=1.5cm, top=1.5cm, bottom=1.8cm, headsep=1cm, footskip=1cm]{geometry}
+
+\textheight=170mm \textwidth=115mm \oddsidemargin=-10mm
+\topmargin=-23mm
+
+\setcounter{page}{1} \footskip 0.6cm
+
+%\topmargin 0.59in %15mm
+%\textheight 7in %178mm
+%\oddsidemargin 0.65in %15mm
+%\textwidth 4.5in %115mm
+%\renewcommand{\baselinestretch}{1}
 \everymath{\displaystyle}
-\usepackage{graphicx}
-\linespread{1.6}
-\usepackage{showkeys}
-
+\renewcommand{\rmdefault}{ftm} % Times New Roman
 \begin{document}
-\title{Циклотронное ускорение электронов в ближней зоне антенн в замагниченной плазме и параметрическая генерация низкочастотных волн}
-	\maketitle{}
-\begin{abstract}
-Экспериментально исследован эффект генерации потоков ускоренных частиц в условиях электронного циклотронного резонанса (ЭЦР) в ближнем поле антенн, при этом в плазме наблюдается диамагнитный эффект: уменьшение индукции внешнего магнитного поля в области, содержащие быстрые частицы. Показано, что при амплитудной модуляции ВЧ сигнала, подводимого к излучающей антенне, в плазме возбуждаются электромагнитные волны на частоте моуляции. Предложено использовать данный эффект в качестве  инструмента параметрической генерации  низкочастотных волн в замагниченной плазме при проведении соответствующих активных экспериментов в ионосфере Земли. 
-\end{abstract}
+\Russian
 
-%\tableofcontents
-%\clearpage
+\thispagestyle{empty}
+\vspace{\fill}
+\begin{center}
+Российская академия наук\\
+Институт прикладной физики\\
+\vspace{3cm}
+А В Т О Р Ы
+
+\vspace{1cm}
+
+\textbf{ЦИКЛОТРОННОЕ УСКОРЕНИЕ ЭЛЕКТРОНОВ В БЛИЖНЕЙ ЗОНЕ АНТЕНН В ЗАМАГНИЧЕННОЙ ПЛАЗМЕ И ПАРАМЕТРИЧЕСКАЯ ГЕНЕРАЦИЯ НИЗКОЧАСТОТНЫХ ВОЛН}
+
+\vspace{3cm}
+Препринт
+
+\vspace{\fill}
+Нижний Новгород, 2011
+\end{center}
+
+\newpage
+\begin{flushleft}
+УДК\hspace*{5mm}
+\end{flushleft}
+\vspace{1.5cm}
+
+Экспериментально исследован эффект генерации потоков ускоренных частиц в условиях электронного циклотронного резонанса (ЭЦР) в ближнем поле антенн, при этом в плазме наблюдается диамагнитный эффект: уменьшение индукции внешнего магнитного поля в области, содержащие быстрые частицы. Показано, что при амплитудной модуляции ВЧ сигнала, подводимого к излучающей антенне, в плазме возбуждаются электромагнитные волны на частоте моуляции. Предложено использовать данный эффект в качестве  инструмента параметрической генерации  низкочастотных волн в замагниченной плазме при проведении соответствующих активных экспериментов в ионосфере Земли. 
+\vspace{1.5cm}
+\begin{center}
+Рецензент:
+\end{center}
+\vspace{\fill}
+\begin{flushright}
+\copyright{}Институт прикладной физики РАН, 2011
+\end{flushright}
+\newpage
 \section{Введение}
 
 Низкочастотные волны, возбуждаемые в диапазонах ультранизких, крайне низких и очень низких частот (УНЧ , КНЧ и ОНЧ), представляют значительный интерес с точки зрения организации сверхдальней радиосвязи, пассивной и активной волновой диагностики параметров ионосферы и магнитосферы Земли, а также рассматриваются как инструмент активного воздействия на околоземную плазму, например --- с целью организации высыпаний энергичных частиц радиационных поясов. Для решения указанных задач актуальным является поиск эффективных методов генерации низкочастотных волн в плазме ближнего космоса. 
