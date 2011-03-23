@@ -1,0 +1,5 @@
+%%%%% FOOTNOTES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand \footnotes[1]{$^($\footnote{#1}$^)$}                %%
+\renewcommand {\@makefntext}[1]{\parindent=1em\noindent         %%
+\hbox to 1.8em{\hss$^{(\@thefnmark)}$}#1}                       %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
