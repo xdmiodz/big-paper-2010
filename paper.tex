@@ -2,6 +2,7 @@
 \usepackage{pscyr}
 \usepackage{cite}
 \usepackage{psfrag}
+\usepackage{color}
 %\usepackage[colorlinks,bookmarksopen]{hyperref}
 \usepackage[warn]{mathtext}
 \usepackage[english,russian]{babel}
@@ -280,7 +281,8 @@ headsep=0cm, footskip=1.3cm
 На \mbox{рис.\ref{fig:phase_composite}$a$} приведены  осциллограммы НЧ сигналов, регистрируемые при подаче на антенну импульса ВЧ накачки с несущей частотой $f\simeq{}f_{ce}$ (ЭЦР) и модулированного по амплитуде с частотой $f_{m}$; различные осциллограммы соответствуют различному радиальному удалению $r$ магнитного датчика от антенны; измерения проводились с шагом $\Delta{}r = 2$~см. Как видно из этого графика, НЧ возмущение внешнего магнитного поля распространяется поперек плазменного столба с конечной фазовой скоростью $v_{\perp}$, увеличивающейся с частотой модуляции ВЧ импульса накачки (\mbox{рис.\ref{fig:phase_composite}$b$}).
 \begin{figure}[H]
         \centering
-        \includegraphics[width=0.5\columnwidth]{pics/phase_composite.eps}
+        \def\svgwidth{0.7\columnwidth} % sets the image width, this is optional
+        \input{pics/phase_composite.tex}
         \caption{$(a)$ Осциллограммы НЧ сигналов, регистрируемые при подаче на антенну амплитудно--модулированного с частотой $f_{m}$ импульса ВЧ накачки в условиях ЭЦР, при различном радиальном удалении $r$ магнитного зонда от антенны ($f_{m} = 400$\, кГц, $f=66.5$\,МГц $\simeq f_{ce}$, $P\simeq 300$\,Вт). $(b)$ Зависимость поперечной скорости распространения $v_{\perp}$ НЧ возмущений внешнего магнитного поля от частоты модуляции $f_{m}$ импульса ВЧ накачки.}
         \label{fig:phase_composite}
 \end{figure} 
